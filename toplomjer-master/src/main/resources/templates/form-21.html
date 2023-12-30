@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Toplomjer</title>
+</head>
+<body oncontextmenu="return false" class="snippet-body like" style="background:linear-gradient(#2cba00,#a3ff00, #fff400)">
+<div class = "flex1">
+  <button onclick="javascript:history.back()" class="wrapper" style="width:25%; max-width: 82px; padding: 8px 8px 8px 8px;">
+    <img src="backarrow_logo.png">
+  </button>
+
+  <button th:onclick="window.location.href = '/form-01?id=[[${currUser.id}]]&password=[[${currUser.password}]]'" class="wrapper" style="width:25%; max-width: 82px;padding: 8px 8px 8px 8px;">
+    <img src="home_logo.png">
+  </button>
+
+</div>
+<div class="flex2">
+<div class="wrapper">
+
+
+  <p style="margin-bottom: 16px; text-align:center; font-weight:500">
+    Kako bi opisali svoju bol?
+  </p>
+  <div class="wrapper2" style="background-color:#2cba00">
+    <div class="help-tip">
+      <p> Vrlo lagana jedva primjetna bol, poput one u času ugriza komarca.  Većinu vremena uopće ne razmišljate o boli.
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=1'" class="button-pain2" style="background-color:#2cba00">Vrlo blaga</button>
+
+  </div>
+  <div class="wrapper2"  style="background-color:#a3ff00">
+    <div class="help-tip">
+      <p>Slaba bol, kao kad se nabor kože između palca i kažiprsta lagano štipa noktima druge ruke. Imajte na umu da ljudi različito reagiraju na ovo samoispitivanje.
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=2'" class="button-pain2" style="background-color:#a3ff00">Nelagodna</button>
+
+
+  </div>
+  <div class="wrapper2"  style="background-color:#fff400">
+    <div class="help-tip">
+      <p>    Vrlo zamjetna bol, poput jače ogrebotine ili uboda injekcijske igle. Moguće je prilagoditi se na takvu bol tako da je većinu vremena ne primijećujete.
+
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=3'" class="button-pain2" style="background-color:#fff400">Podnošljiva</button>
+
+  </div>
+
+  <button class="button-legenda" onclick="window.location.href='/showLegend?ref=21'">Legenda</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Toplomjer</title>
+</head>
+<body oncontextmenu="return false" class="snippet-body like" style="background: linear-gradient(#ff9a00,#ff0000); ">
+<div class="flex1">
+  <button onclick="javascript:history.back()" class="wrapper" style="width:25%; max-width: 82px; padding: 8px 8px 8px 8px;">
+    <img src="backarrow_logo.png">
+  </button>
+
+  <button th:onclick="window.location.href = '/form-01?id=[[${currUser.id}]]&password=[[${currUser.password}]]'" class="wrapper" style="width:25%; max-width: 82px;padding: 8px 8px 8px 8px;">
+    <img src="home_logo.png">
+  </button>
+
+</div>
+<div class="flex2">
+
+<div class="wrapper" >
+
+
+  <p style="margin-bottom: 16px; text-align:center; font-weight:500">
+    Kako bi opisali svoju bol?
+  </p>
+
+  <div class="wrapper2" style="background-color:#FF8B01">
+    <div class="help-tip">
+      <p>Isto kao i 6, s tim što vas onemogućava da jasno razmišljate. Bol vas toliko onesposobljava da u većini aktivnosti dnevnog života trebate pomoć druge osobe.
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=7'" class="button-pain2" style="background-color:#FF8B01; color:white;">Vrlo intenzivna</button>
+
+
+  </div>
+  <div class="wrapper2"  style="background-color:#FA6F01">
+    <div class="help-tip">
+      <p>Bol je toliko intenzivna da više uopće ne možete jasno razmišljati niti normalno spavati. Ako je bol prisutna već duže vrijeme, vaša osobnost je duboko promijenjena (tjeskobnost, jaka potištenost, razdražljivost, ne možete se koncentrirati).
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=8'" class="button-pain2" style="background-color:#FA6F01; color:white;">Užasna</button>
+
+
+
+  </div>
+  <div class="wrapper2"  style="background-color:#F55301">
+    <div class="help-tip">
+      <p>
+        Bol je tako jaka da je ne možete podnijeti i tražite lijekove ili kiruršku operaciju bez obzira na posljedice. Za žene, bol je usporediva s porođajem bez anestezije. Nema više nikakve radosti u životu. Često se razmišlja o samoubojstvu.
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=9'" class="button-pain2" style="background-color:#F55301; color:white;">Nepodnošljiva</button>
+
+  </div>
+  <div class="wrapper2"  style="background-color:#E60001">
+    <div class="help-tip">
+      <p>
+        Većina ljudi nikad nije doživjela tu razinu boli. Bol je tako intenzivna da je moguće onesvijestiti se. Oni koji su pretrpjeli tešku nesreću, kao što je zgnječena šaka, te izgubili svijest zbog boli, a ne gubitka krvi, doživjeli su razinu boli 10. To je jačina napada bubrežnih kamenaca. Moguće je samoubojstvo.
+      </p>
+    </div>
+
+    <button onclick = "window.location.href = '/form-3?painLevel=10'" class="button-pain2" style="background-color:#E60001; color:white;">Nezamisliva i nepodnošljiva</button>
+
+
+  </div>
+
+  <button class="button-legenda" onclick="window.location.href='/showLegend?ref=23'">Legenda</button>
+
+</div>
+</div>
+</body>
+</html>
