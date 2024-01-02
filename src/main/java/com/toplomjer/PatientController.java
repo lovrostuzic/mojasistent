@@ -1,9 +1,9 @@
-package com.toplomjer.toplomjer;
+package com.toplomjer;
 
-import com.toplomjer.toplomjer.model.User;
-import com.toplomjer.toplomjer.model.UserRepository;
-import com.toplomjer.toplomjer.model.Record;
-import com.toplomjer.toplomjer.model.RecordRepository;
+import com.toplomjer.model.User;
+import com.toplomjer.model.UserRepository;
+import com.toplomjer.model.Record;
+import com.toplomjer.model.RecordRepository;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,10 +18,8 @@ import java.util.Map;
 @Controller
 public class PatientController {
 
-
     @Autowired
     UserRepository userRepository;
-
     @Autowired
     RecordRepository recordRepository;
 

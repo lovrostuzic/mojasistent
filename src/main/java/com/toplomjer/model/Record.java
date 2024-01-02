@@ -1,4 +1,4 @@
-package com.toplomjer.toplomjer.model;
+package com.toplomjer.model;
 
 import jakarta.persistence.*;
 
@@ -16,7 +16,6 @@ public class Record {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User patient;
-
 
     private int painLevel;
 

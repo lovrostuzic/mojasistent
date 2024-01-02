@@ -1,4 +1,4 @@
-package com.toplomjer.toplomjer;
+package com.toplomjer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

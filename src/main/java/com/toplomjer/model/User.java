@@ -1,4 +1,4 @@
-package com.toplomjer.toplomjer.model;
+package com.toplomjer.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

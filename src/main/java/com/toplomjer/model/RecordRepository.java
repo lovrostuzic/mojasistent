@@ -1,4 +1,4 @@
-package com.toplomjer.toplomjer.model;
+package com.toplomjer.model;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
