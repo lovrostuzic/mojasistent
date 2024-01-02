@@ -1,12 +1,10 @@
 package com.toplomjer.model;
 
 import jakarta.persistence.*;
-
 import java.util.Date;
 
 @Entity
 public class Record {
-
 
     @Id
     @GeneratedValue

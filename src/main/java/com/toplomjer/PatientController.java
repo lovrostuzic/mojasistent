@@ -22,7 +22,6 @@ public class PatientController {
     UserRepository userRepository;
     @Autowired
     RecordRepository recordRepository;
-
     User currUser;
 
     @GetMapping("/patient-dashboard")

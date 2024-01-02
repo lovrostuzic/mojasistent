@@ -14,7 +14,6 @@ public class LoginController {
     @Autowired
     UserRepository userRepository;
 
-
     @GetMapping("/")
     public String showLogin(Model model) {
         return "login.html";
